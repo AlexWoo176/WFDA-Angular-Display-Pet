@@ -1,0 +1,14 @@
+<h1>Pet Profile</h1>
+<p>
+  <a>PetGirl Name:</a>
+  <input [value]="nameImage" (change)="setNameImage($event.target.value)">
+</p>
+<p>
+  <a>PetGirl Image</a>
+  <input [value]="urlImage" (change)="setUrlImage($event.target.value)">
+</p>
+
+<h1>Pet name: {{nameImage}}</h1>
+<iframe width="813" height="457" [src]="urlImage | safe" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+

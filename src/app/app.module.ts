@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PetComponent } from './pet/pet.component';
+import { PetgirlComponent } from './petgirl/petgirl.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PetComponent,
+    PetgirlComponent
   ],
   imports: [
     BrowserModule,
